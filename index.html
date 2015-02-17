@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -88,6 +88,10 @@
 
         timer = setInterval(showRemaining, 1000);
         window.onload = showRemaining;
+		
+		function openWindow(url) {
+			window.open(url);
+		}
     </script>
 </head>
 <body>
@@ -143,16 +147,16 @@
                         <td width="40%" colspan="4">
                             <div class="icons">
                                 <span>
-                                    <a target="_blank" href="http://twitter.com/share?url=http://devcon15.azurewebsites.net/"><img class="imgicon" src="./Content/twitter.png"></a>
+                                    <a href="javascript:void(0)" onclick="javascript:openWindow('http://twitter.com/share?url=http://devcon15.azurewebsites.net/')"><img class="imgicon" src="./Content/twitter.png"></a>
                                 </span>
                                 <span>
-                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://devcon15.azurewebsites.net/"><img class="imgicon" src="./Content/facebook.png"></a>
+                                    <a href="javascript:void(0)" onclick="javascript:openWindow('http://www.facebook.com/sharer.php?u=http://devcon15.azurewebsites.net/')"><img class="imgicon" src="./Content/facebook.png"></a>
                                 </span>
                                 <span>
-                                    <a target="_blank" href="https://plus.google.com/share?url=http://devcon15.azurewebsites.net/"><img class="imgicon" src="./Content/google.png"></a>
+                                    <a href="javascript:void(0)" onclick="javascript:openWindow('https://plus.google.com/share?url=http://devcon15.azurewebsites.net/')"><img class="imgicon" src="./Content/google.png"></a>
                                 </span>
                                 <span>
-                                    <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://devcon15.azurewebsites.net/"><img class="imgicon" src="./Content/linkedin.png"></a>
+                                    <a href="javascript:void(0)" onclick="javascript:openWindow('http://www.linkedin.com/shareArticle?mini=true&amp;url=http://devcon15.azurewebsites.net/')"><img class="imgicon" src="./Content/linkedin.png"></a>
                                 </span>
                             </div>
                         </td>
