@@ -21,6 +21,7 @@
             background-size: cover;
             font-size: medium;
             font-weight: bold;
+            position: relative;
         }
 
         h1 {
@@ -57,41 +58,9 @@
         }
     </style>
     <script type="text/javascript">
-        var end = new Date('03/14/2015 09:00:00 AM');
-
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
-
-        function showRemaining() {
-            var now = new Date();
-            var distance = end - now;
-            if (distance < 0) {
-
-                clearInterval(timer);
-                document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-                return;
-            }
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-            var seconds = Math.floor((distance % _minute) / _second);
-
-            document.getElementById('days').innerHTML = days;
-            document.getElementById('hours').innerHTML = hours;
-            document.getElementById('mins').innerHTML = minutes;
-            document.getElementById('secs').innerHTML = seconds;
-        }
-
-        timer = setInterval(showRemaining, 1000);
-        window.onload = showRemaining;
-		
-		function openWindow(url) {
-			window.open(url);
-		}
+	function openWindow(url) {
+		window.open(url);
+	}
     </script>
     <script type="text/javascript">
     var appInsights=window.appInsights||function(config){
@@ -104,7 +73,7 @@
     appInsights.trackPageView();
 	</script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -136,22 +105,6 @@
             </h1>
             <div class="table-responsive">
                 <table class="table borderless" align="center">
-                    <tr>
-                        <td width="30%">&nbsp;</td>
-                        <td width="10%"><div class="circlebase circle"><div id="days"></div></div></td>
-                        <td width="10%"><div class="circlebase circle"><div id="hours"></div></div></td>
-                        <td width="10%"><div class="circlebase circle"><div id="mins"></div></div></td>
-                        <td width="10%"><div class="circlebase circle"><div id="secs"></div></div></td>
-                        <td width="30%">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td width="30%">&nbsp;</td>
-                        <td width="10%" class="subtitle">DAYS</td>
-                        <td width="10%" class="subtitle">HOURS</td>
-                        <td width="10%" class="subtitle">MINUTES</td>
-                        <td width="10%" class="subtitle">SECONDS</td>
-                        <td width="30%">&nbsp;</td>
-                    </tr>
                     <tr>
                         <td width="30%">&nbsp;</td>
                         <td width="40%" colspan="4">
