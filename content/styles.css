@@ -1,0 +1,16 @@
+﻿body {
+    padding-top: 70px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #000;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+}
+
+i{
+    color:#000;
+}
+
+#Home {
+    text-align: center;
+}
