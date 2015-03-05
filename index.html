@@ -1,3 +1,7 @@
+@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,21 +18,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="content/styles.css" type="text/css" />
-    <style>
-        .media-body p {
-            text-align: justify;
-        }
-
-        .media-body h4 {
-            text-align: left;
-            font-weight: bold;
-        }
-
-        .media img {
-            width: 80px;
-            height: 80px;
-        }
-    </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -99,26 +88,12 @@
                     <br />
                     <table class="table borderless">
                         <tr>
-                            <td>
-                                <h3>Platinum</h3>
-                                <hr />
-                                <table class="table">
+                            <td colspan="4">
+                                <table class="table borderless">
                                     <tr>
                                         <td>
                                             <img src="content/microsoft.png" alt="Microsoft" />
                                         </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Premium</h3>
-                                <hr />
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <img src="content/logo.png" alt="Kerala Microsoft Users Group." /></td>
                                         <td>
                                             <img src="content/orion_logo.png" alt="Orion India Systems." />
                                         </td>
@@ -131,24 +106,21 @@
                         </tr>
                         <tr>
                             <td>
-                                <h3>Silver</h3>
-                                <hr />
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <img src="content/bridge_logo.png" alt="Bridge India" />
-                                        </td>
-                                        <td>
-                                            <img src="content/xamarin_logo.png" alt="Xamarin." id="XamarinLogo" />
-                                        </td>
-                                        <td>
-                                            <img src="content/aj_logo.png" alt="Authentic Journeys." />
-                                        </td>
-                                        <td>
-                                            <img src="content/toastmasterlogo.png" alt="Toastmasters." />
-                                        </td>
-                                    </tr>
-                                </table>
+                                <img src="content/bridge_logo.png" alt="Bridge India" />
+                            </td>
+                            <td>
+                                <img src="content/xamarin_logo.png" alt="Xamarin." id="XamarinLogo" />
+                            </td>
+                            <td>
+                                <img src="content/aj_logo.png" alt="Authentic Journeys." />
+                            </td>
+                            <td>
+                                <img src="content/toastmasterlogo.png" alt="Toastmasters." />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <img src="content/logo.png" alt="Kerala Microsoft Users Group." />
                             </td>
                         </tr>
                     </table>
@@ -226,101 +198,73 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Speakers</h1>
-                    <hr />
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img class="img-circle media-object" src="content/shiju.png" alt="Shiju Varghese">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Shiju Varghese</h4>
-                                    <p>
-                                        Shiju Varghese is a Solutions Architect who specializes in cloud computing solutions and web based backend systems. He has developed web apps and distributed systems in Golang, C# and Node.js. His areas of interest include Cloud Solutions Architecture, Application Containers, Distributed Systems, RESTful Microservices Architecture, Enterprise APIs and Mobile Backend as a Service. You can follow him on twitter at https://twitter.com/shijucv.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/yanesh.png" alt="Yanesh Tyagi" class="img-circle media-object" />
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Yanesh Tyagi</h4>
-                                    <p>
-                                        Yanesh Tyagi, Delivery Manager with Millennium Consultants, has extensive 19 years of experience working on different technologies, mostly in Microsoft space. He has been working on .NET platform since it's early days. He specializes in developing enterprise level solution architecture. Currently he is focused on delivery excellence by implementing continuous delivery. Yanesh has worked in various domains including BFSI, Travel and eCommerce. Yanesh is also involved in couple of open source projects.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/praveen.png" alt="Praveen Nair" class="img-circle media-object">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Praveen Nair</h4>
-                                    <p>
-                                        Praveen Nair heads the Technology and Architecture at ORION KOCHI and is having extensive experience in project management and technology architecture. He regularly blogs at http://ninethsense.com/ and holds PMP, MVP and MCP badges.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/profile.png" alt="Anuraj" class="img-circle media-object" />
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Anuraj</h4>
-                                    <p>
-                                        Anuraj leads the ORION Technology and Innovation team at in Orion India Systems, Kochi. His focus areas are Data Analytics, Architecture and Cloud computing. He blogs at http://www.dotnetthoughts.net/. You can follow him on twitter &#64;anuraj.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/safil.png" alt="Safil Sunny" class="img-circle media-object">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Safil Sunny</h4>
-                                    <p>
-                                        Safil Sunny is a Enterprise Mobility Solution Architect, Scrum Master at Bridge Global IT Staffing, who has hands on experience in developing enterprise application for the domains such as Airline, Travel, Shipping, Digital signage, Entertainment, Point of Sales. Key Functional Area : Enterprise & Consumer App Development in Mobility.He blogs at www.safilsunny.com
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img class="img-circle media-object" src="content/vivek.png" alt="Vivek Prasannan">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Vivek Prasannan</h4>
-                                    <p>
-                                        Mr. Vivek Prasannan is an serial entrepreneur with over 14 years of web hosting, data center and data warehousing industry experience having worked for reputed companies such as ImHosted.com, Stormwire.com, LLC and Real-Ware LLC in the past. He co-founded LogicSupport.com and Chicago-based Leela Ventures. SupportExpertz.com is his 3rd venture to meet the increased demand for quality outsourced technical support for the clients in Illinois, US and around the world. His latest venture, Katality.com enables small and medium scale banks and financial institutions to compete in an ever evolving banking and financial industry.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/Joji Varghese.png" alt="Joji Varghese" class="img-circle media-object">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">CTM ALB Joji Varghese Thengumootil</h4>
-                                    <p>
-                                        Electrical Engineer,graduated in1972 from TKM col.of Engg, Quilon. 24 years with Bahrain government. Joined KTC 2004; 2006-'07 VP(Education), 2009-'10 Club President.Major accomplishments during presidency :- "PresidentsDistinguishedClubAward"from Toastmasters International, first time in the history of KTC. Established Active library with 30+ TM books, Organised three days training program by DTM Patnaik(Chennai), Facilitated YouthLeadershipProgram with TM Monish as co-ordinator, Published first souvenir of KTC..(all on external revenues with out taxing on club subscription). Founder President "MathruBhasha Prasanga Kalarii" & SmartcityTMs.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="media-left media-top">
-                                    <img src="content/jen_kumar.png" alt="Jennifer Kumar" class="img-circle  media-object">
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Jennifer Kumar</h4>
-                                    <p>
-                                        Jennifer Kumar has a proven track record helping Indian business executives (junior managers all the way up to CEOs) attain a clear and thorough understanding of their American and European counterparts. An American expat living in Kochi, and married to a man from Kerala, Jennifer strides and bridges both cultures.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table borderless">
+                        <tr>
+                            <td>
+                                <img class="img-circle" src="content/vivek.png" alt="Vivek Prasannan"></td>
+                            <td>
+                                <h4>Vivek Prasannan</h4>
+                                Mr. Vivek Prasannan is an serial entrepreneur with over 14 years of web hosting, data center and data warehousing industry experience having worked for reputed companies such as ImHosted.com, Stormwire.com, LLC and Real-Ware LLC in the past. He co-founded LogicSupport.com and Chicago-based Leela Ventures. SupportExpertz.com is his 3rd venture to meet the increased demand for quality outsourced technical support for the clients in Illinois, US and around the world. His latest venture, Katality.com enables small and medium scale banks and financial institutions to compete in an ever evolving banking and financial industry.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="img-circle" src="content/shiju.png" alt="Shiju Varghese"></td>
+                            <td>
+                                <h4>Shiju Varghese</h4>
+                                Shiju Varghese is a Solutions Architect who specializes in cloud computing solutions and web based backend systems. He has developed web apps and distributed systems in Golang, C# and Node.js. His areas of interest include Cloud Solutions Architecture, Application Containers, Distributed Systems, RESTful Microservices Architecture, Enterprise APIs and Mobile Backend as a Service. You can follow him on twitter at https://twitter.com/shijucv. </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/yanesh.png" alt="Yanesh Tyagi" class="img-circle" />
+                            </td>
+                            <td>
+                                <h4>Yanesh Tyagi</h4>
+                                Yanesh Tyagi, Delivery Manager with Millennium Consultants, has extensive 19 years of experience working on different technologies, mostly in Microsoft space. He has been working on .NET platform since it's early days. He specializes in developing enterprise level solution architecture. Currently he is focused on delivery excellence by implementing continuous delivery. Yanesh has worked in various domains including BFSI, Travel and eCommerce. Yanesh is also involved in couple of open source projects.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/praveen.png" alt="Praveen Nair" class="img-circle"></td>
+                            <td>
+                                <h4>Praveen Nair</h4>
+                                Praveen Nair heads the Technology and Architecture at ORION KOCHI and is having extensive experience in project management and technology architecture. He regularly blogs at http://ninethsense.com/ and holds PMP, MVP and MCP badges.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/profile.png" alt="Anuraj" class="img-circle" />
+                            </td>
+                            <td>
+                                <h4>Anuraj</h4>
+                                Anuraj works as a Tech Lead in Orion India Systems. He works in Data Analytics and Architecture. He blogs at http://www.dotnetthoughts.net/.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/safil.png" alt="Safil Sunny" class="img-circle"></td>
+                            <td>
+                                <h4>Safil Sunny</h4>
+                                Safil Sunny is a Enterprise Mobility Solution Architect, Scrum Master @Bridge Global IT Staffing, who has hands on experience in developing enterprise application for the domains such as Airline, Travel, Shipping, Digital signage, Entertainment, Point of Sales. Key Functional Area : Enterprise & Consumer App Development in Mobility.He blogs @ www.safilsunny.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/Joji Varghese.png" alt="Joji Varghese" class="img-circle"></td>
+                            <td>
+                                <h4>CTM ALB Joji Varghese Thengumootil</h4>
+                                Electrical Engineer,graduated in1972 from TKM col.of Engg, Quilon. 24 years with Bahrain government. Joined KTC 2004; 2006-'07 VP(Education), 2009-'10 Club President.Major accomplishments during presidency :- "PresidentsDistinguishedClubAward"from Toastmasters International, first time in the history of KTC. Established Active library with 30+ TM books, Organised three days training program by DTM Patnaik(Chennai), Facilitated YouthLeadershipProgram with TM Monish as co-ordinator, Published first souvenir of KTC..(all on external revenues with out taxing on club subscription). Founder President "MathruBhashaPrasangaKalarii" & SmartcityTMs.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="content/jen_kumar.png" alt="Jennifer Kumar" class="img-circle"></td>
+                            <td>
+                                <h4>Jennifer Kumar</h4>
+                                Jennifer Kumar has a proven track record helping Indian business executives (junior managers all the way up to CEOs) attain a clear and thorough understanding of their American and European counterparts. An American expat living in Kochi, and married to a man from Kerala, Jennifer strides and bridges both cultures.
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
