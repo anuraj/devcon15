@@ -450,7 +450,7 @@
     <script type="text/javascript">
         $(function () {
             $('a.page-scroll').bind('click', function (event) {
-                e.preventDefault();
+                event.preventDefault();
                 var goto = $(this).attr('href');
                 $('html, body').animate({
                     scrollTop: $(goto).offset().top
