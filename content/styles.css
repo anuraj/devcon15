@@ -1,16 +1,452 @@
 ﻿body {
-    padding-top: 70px;
+    margin: 0px;
+    /*font-family: 'Segoe UI Light', sans-serif;*/
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #000;
-    font-size: medium;
+    color: #116e9d;
+    /*background-image: -ms-linear-gradient(top, #FFFFFF 0%, #33759B 100%, #000000 200%);
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #33759B 100%, #000000 200%);
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #33759B 100%, #000000 200%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #33759B), color-stop(2, #000000));
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #33759B 100%, #000000 200%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #33759B 100%, #000000 200%);*/
+}
+
+.kmuglogo {
+    float: left;
+    width: 70px;
+    margin-right: 5px;
+    height: 77px;
+    background-color: transparent;
+    background-size: cover;
+}
+
+.devcontitle {
+    margin: 0 auto;
+    width: 725px;
+    height: 130px;
+    background-color: rgba(25, 101, 207, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sppic {
+    width: 100px;
+    height: 115px;
+    border-radious: 50%;
+    float: left;
+}
+
+#home {
+    /*background-color: rgb(241, 240, 255);*/
+    /*padding-right: 2%;*/
+    padding-top: 70px;
+}
+
+    #home > h1 {
+        padding-top: 6%;
+    }
+
+.nav {
+    background-color: rgba(27, 25, 46, 1);
+    width: 100%;
+    height: 77px;
+    position: fixed;
+    top: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.title {
+    color: #EDEDED;
+    font-size: 150%;
+    margin-top: 20px;
     font-weight: bold;
-    position: relative;
+    float: left;
 }
 
-i{
-    color:#000;
+.subtitle {
+    color: #EDEDED;
+    font-size: 100%;
 }
 
-#Home {
+.navigation {
+    list-style-type: inherit;
+    text-align: right;
+    padding-right: 8%;
+    margin-top: 25px;
+}
+
+li {
+    display: inline;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.active {
+    /*border: solid 1px #FFF;
+    background-color: #0094ff;*/
+}
+
+.nav a {
+    text-decoration: none;
+    color: #EDEDED;
+    font-weight: bold;
+}
+
+    .nav a:hover {
+        color: #BDBDBD;
+    }
+
+.section {
+    min-height: 658px;
+    margin-top: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
+    padding-bottom: 25px;
+}
+
+#sponsors {
+    padding-top: 12px;
+}
+
+#wpchallenge {
+    padding-top: 12px;
+}
+
+    #wpchallenge > div {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+    }
+
+        #wpchallenge > div > img {
+            float: left;
+        }
+
+
+#venue {
+    padding-top: 12px;
+    background-color: rgb(240, 237, 237);
+}
+
+.section > p {
+    margin: 24px 50px 0px 50px;
+    color: #000;
+    font-weight: bold;
     text-align: center;
+    font-size: 118%;
+}
+
+.section > h1 {
+    text-align: center;
+    font-size: 450%;
+    /*text-decoration: underline;*/
+}
+
+.section > h2 {
+    text-align: center;
+    font-size: 195%;
+    font-weight: bold;
+    color: #000;
+}
+
+.section > .input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Sponsorslogo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-height: 165px;
+    display: block;
+    padding-top: 1%;
+}
+
+    .Sponsorslogo > img {
+        width: 100%;
+        max-width: 465px;
+    }
+
+.button {
+    border-radius: 0px;
+    color: #000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 100%;
+    padding: 20px;
+    background-color: #1C8CCA;
+    border: 1px solid #80D2FF;
+    -moz-box-shadow: inset 0 1px 0 #1965cf;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .button :hover {
+        background-color: rgba(255,204,0,0.8);
+    }
+
+#venue > div > iframe {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    height: 450px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#venue > div > h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#container {
+    /*padding: 2%;*/
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#Menu {
+    display: none;
+}
+
+#NavMenu2 {
+    display: none;
+}
+
+#NavMenu {
+    display: block;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #CCC;
+        text-decoration: none;
+    }
+
+.table {
+    display: table;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Row {
+    display: table-row;
+}
+
+.Cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+    /*.Cell > p {
+        margin-left: 20px;
+    }
+
+    .Cell > h2 {
+        padding-left: 20px;
+    }
+*/
+    .Cell > img {
+        width: 100%;
+    }
+
+.icons {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .icons i {
+        padding: 1%;
+        color:#000;
+    }
+
+a img {
+    border: none 0px #FFF !important;
+}
+
+
+#speakers {
+    padding-top: 12px;
+    background-color: rgb(240, 243, 247);
+}
+
+    #speakers > div {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+    }
+
+.speaker {
+    width: 80%;
+    border: 1px solid rgb(255, 255, 255);
+    min-height: 150px;
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+}
+
+
+    .speaker > img {
+        border-radius: 50%;
+        float: left;
+        max-width: 100px;
+        max-height: 100px;
+        width: 100px;
+        height: 100px;
+        padding: 2%;
+    }
+
+.circular {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-repeat: no-repeat;
+}
+
+.wpchallengetext {
+    font-size: 105%;
+    padding-top: 6%;
+}
+
+#agenda {
+    padding-top: 12px;
+}
+
+    #agenda > div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #agenda > ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+.agenda_details {
+    width: 80%;
+    /*border: 1px solid #EBE5E5;*/
+    background-color: rgb(250, 250, 250);
+}
+
+    .agenda_details > div {
+        padding: 1%;
+        font-weight: bold;
+    }
+
+#ribbon-iw {
+    -moz-box-shadow: 0 0 7px #777;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 0;
+    height: 46px;
+    overflow: hidden;
+    padding: 8px 10px;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .devcontitle {
+        width: 100%;
+        background-size: contain;
+    }
+
+    #Menu {
+        display: block;
+        text-align: right;
+        margin-top: 15px;
+        padding-right: 4%;
+    }
+
+    #NavMenu {
+        display: none;
+    }
+
+    #NavMenu2 {
+        display: block;
+    }
+
+    .title {
+        color: #EDEDED;
+        font-size: 130%;
+        margin-top: 10px;
+        font-weight: bold;
+        float: left;
+    }
+
+    .navigation {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    li {
+        display: block;
+        padding: 10.5px 11px;
+        background-color: #1965cf;
+        border-bottom: solid 1px #fff;
+    }
+
+    .table {
+        display: table;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Row {
+        display: table-row;
+        width: 120%;
+    }
+
+    .Cell {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1%;
+        float: left;
+    }
+
+        .Cell > img {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+    #NavMenu2 a {
+        text-decoration: none;
+        color: #EDEDED;
+    }
+
+        #NavMenu2 a:hover {
+            color: #BDBDBD;
+        }
 }
